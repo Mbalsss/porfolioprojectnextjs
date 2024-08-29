@@ -1,0 +1,70 @@
+/* src/styles/About.module.css */
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f4f8; /* Light background color */
+  color: #333; /* Dark text color for readability */
+  padding: 20px; /* Ensure there's padding around the container */
+}
+
+.main {
+  text-align: center;
+  max-width: 900px;
+  padding: 20px;
+  background: #ffffff; /* Solid white background for content */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  text-align: center;
+}
+
+.title {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  animation: slideIn 1s ease-in-out;
+}
+
+.description {
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.bio {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  opacity: 0.9;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.contactButton {
+  margin-top: 4rem; /* Further increased margin-top to move button further down */
+  background-color: #007bff;
+  color: white;
+  padding: 0.75rem 2rem;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  text-decoration: none;
+  display: inline-block; /* Ensure it's treated as a block-level element for margin */
+}
+
+.contactButton:hover {
+  background-color: #0056b3;
+  transform: translateY(-5px);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideIn {
+  from { transform: translateY(-20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}

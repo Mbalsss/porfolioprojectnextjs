@@ -1,0 +1,71 @@
+/* src/styles/Home.module.css */
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url('/pexels.jpg') no-repeat center center fixed; /* Update with your image file name */
+  background-size: cover; /* Make sure the image covers the full screen */
+  color: black; /* Change text color to black */
+  padding: 0; /* Remove padding to ensure full image coverage */
+  text-align: center;
+}
+
+.main {
+  max-width: 800px;
+  padding: 20px;
+}
+
+.title {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  color: black; /* Ensure title text is black */
+}
+
+.introduction {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: black; /* Ensure introduction text is black */
+  font-weight: bold; /* Optional: make it bold for emphasis */
+}
+
+.description {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: black; /* Ensure description text is black */
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  width: 100%;
+}
+
+.card {
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.7); /* Semi-transparent background for cards */
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  color: black; /* Ensure card text is black */
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.card h2 {
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+  color: black; /* Ensure card title text is black */
+}
+
+.card p {
+  font-size: 1.2rem;
+  opacity: 0.8;
+  color: black; /* Ensure card paragraph text is black */
+}

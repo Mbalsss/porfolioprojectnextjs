@@ -1,0 +1,65 @@
+/* src/styles/Projects.module.css */
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f4f8; /* Light background color */
+  color: #333; /* Dark text color for readability */
+  padding: 20px; /* Add padding for content spacing */
+}
+
+.main {
+  max-width: 900px;
+  padding: 20px;
+  background: #ffffff; /* Solid white background for content */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  text-align: center;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #222; /* Darker text for title */
+}
+
+.description {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  color: #444; /* Slightly lighter text for description */
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid layout */
+  gap: 1.5rem;
+}
+
+.card {
+  padding: 20px;
+  background: #ffffff; /* White background for cards */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Subtle shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #333; /* Dark text color */
+  text-decoration: none; /* Remove underline from links */
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+.card h2 {
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+  color: #222; /* Darker text for headings */
+}
+
+.card p {
+  font-size: 1rem;
+  color: #666; /* Lighter text color for content */
+}
