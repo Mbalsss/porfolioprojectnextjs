@@ -22,6 +22,14 @@ export default function Home() {
             <h2>About &rarr;</h2>
             <p>Learn more about my background and skills.</p>
           </Link>
+          <Link href="/education" className={styles.card}>
+            <h2>Education &rarr;</h2>
+            <p>Learn more about my background and skills.</p>
+          </Link>
+          <Link href="/experience" className={styles.card}>
+            <h2>Experience &rarr;</h2>
+            <p>Learn more about my background and skills.</p>
+          </Link>
         </div>
       </main>
     </div>
